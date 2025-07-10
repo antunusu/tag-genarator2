@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TagGenius | YouTube Tag Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>T</h1>
+            </div>
+            <div class="tool-selector">
+                <button class="tool-btn active">YouTube Tag Generator</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tag-generator">
+            <div class="tag-generator-header">
+                <h1>TAG GENERATOR</h1>
+                <h2>Generate tags for<br>your YouTube videos</h2>
+            </div>
+            <div class="search-container">
+                <input type="text" id="video-title" placeholder="Enter video title or keyword...">
+                <button id="generate-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="tag-results" id="tag-results">
+            <div class="results-header">
+                <div class="results-info">
+                    <span class="tag-count">0 tags</span>
+                    <span class="character-count">0 characters</span>
+                </div>
+                <div class="tag-actions">
+                    <button id="copy-all-btn"><i class="fas fa-copy"></i></button>
+                    <button id="clear-btn"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+            <div class="tags-container" id="tags-container">
+                <!-- Tags will be displayed here -->
+                <div class="empty-state">
+                    <i class="fas fa-tags"></i>
+                    <p>Enter a video title or keyword to generate tags</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tag-info">
+            <div class="info-box">
+                <h3>About YouTube Tags</h3>
+                <p>Tags help viewers find your videos when they search with those keywords. Good tags can improve your video's visibility in YouTube search results.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>TagGenius</h2>
+                <p>Helping you grow on YouTube</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
